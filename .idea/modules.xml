@@ -3,7 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Course-Java.iml" filepath="$PROJECT_DIR$/Course-Java.iml" />
-      <module fileurl="file://$PROJECT_DIR$/multi-threading/multi-threading.iml" filepath="$PROJECT_DIR$/multi-threading/multi-threading.iml" />
+      <module fileurl="file://$PROJECT_DIR$/NCS/NCS.iml" filepath="$PROJECT_DIR$/NCS/NCS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/NCS/multi-threading/multi-threading.iml" filepath="$PROJECT_DIR$/NCS/multi-threading/multi-threading.iml" />
     </modules>
   </component>
 </project>
