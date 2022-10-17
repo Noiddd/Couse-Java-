@@ -12,8 +12,6 @@ class InvalidPasswordException extends Exception {
     }
 }
 
-
-
 class ATM {
     int accountNumber;
     int password;
@@ -65,8 +63,6 @@ class Bank {
             System.out.println(iane.getMessage() + " in initiate method in Bank class");
         } catch(InvalidPasswordException ipe) {
             System.out.println(ipe.getMessage() + " in initiate method in Bank class");
-        } catch (Exception e) {
-            System.out.println("Some problem occured");
         }
     }
 }
