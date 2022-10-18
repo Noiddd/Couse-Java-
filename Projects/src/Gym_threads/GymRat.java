@@ -1,3 +1,5 @@
+package Gym_threads;
+
 public class GymRat {
     public String username;
     public String trainingSplit;

@@ -1,3 +1,5 @@
+package Gym_threads;
+
 public class ClassBookingThread implements Runnable {
     private Gym gym;
     private String name;

@@ -1,3 +1,5 @@
+package Gym_threads;
+
 import java.util.ArrayList;
 
 public class LaunchProject {

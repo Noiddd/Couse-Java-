@@ -2,15 +2,14 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Concepts/Collections/Collections.iml" filepath="$PROJECT_DIR$/Concepts/Collections/Collections.iml" />
       <module fileurl="file://$PROJECT_DIR$/Concepts/Concepts.iml" filepath="$PROJECT_DIR$/Concepts/Concepts.iml" />
       <module fileurl="file://$PROJECT_DIR$/Course-Java.iml" filepath="$PROJECT_DIR$/Course-Java.iml" />
       <module fileurl="file://$PROJECT_DIR$/Mosh/Mosh.iml" filepath="$PROJECT_DIR$/Mosh/Mosh.iml" />
       <module fileurl="file://$PROJECT_DIR$/NCS/NCS.iml" filepath="$PROJECT_DIR$/NCS/NCS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Projects/Projects.iml" filepath="$PROJECT_DIR$/Projects/Projects.iml" />
       <module fileurl="file://$PROJECT_DIR$/NCS/collections/collections.iml" filepath="$PROJECT_DIR$/NCS/collections/collections.iml" />
       <module fileurl="file://$PROJECT_DIR$/NCS/filehandling/filehandling.iml" filepath="$PROJECT_DIR$/NCS/filehandling/filehandling.iml" />
       <module fileurl="file://$PROJECT_DIR$/NCS/multi-threading/multi-threading.iml" filepath="$PROJECT_DIR$/NCS/multi-threading/multi-threading.iml" />
-      <module fileurl="file://$PROJECT_DIR$/NCS/multi-threading-project/multi-threading-project.iml" filepath="$PROJECT_DIR$/NCS/multi-threading-project/multi-threading-project.iml" />
     </modules>
   </component>
 </project>

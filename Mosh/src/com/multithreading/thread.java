@@ -1,34 +1,33 @@
 package com.multithreading;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class thread {
     public static void main(String[] args) {
-        // We can create a thread using a lambda expression
-        Thread thread1 = new Thread(() -> System.out.println("a"));
+        List<Thread> threads = new ArrayList<Thread>();
+        List<DownloadFileTask> tasks = new ArrayList<DownloadFileTask>();
 
-        // or using an instance of a class that implements the Runnable interface
-        DownloadStatus status = new DownloadStatus();
-        Thread thread2 = new Thread(new DownloadFileTask(status));
+        for (int i = 0; i < 10; i++) {
+            DownloadFileTask task = new DownloadFileTask();
+            tasks.add(task);
 
-        // Next we start a thread
-        thread1.start();
-
-        // We can wait for the completion of a thread
-        try {
-            thread1.join();
-        } catch (InterruptedException e) {
-            e.printStackTrace();
+            Thread thread = new Thread(task);
+            thread.start();
+            threads.add(thread);
         }
 
-        // We can put a thread to sleep
-        try {
-            thread1.sleep(5000);
-        } catch (InterruptedException e) {
-            e.printStackTrace();
+        for(Thread thread: threads) {
+            try {
+                thread.join();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
         }
 
-        // We can get the current thread
-        var current = Thread.currentThread();
-        System.out.println(current.getId());
-        System.out.println(current.getName());
+        var totalBytes = tasks.stream().map(t->t.getStatus().getTotalBytes()).reduce(Integer::sum);
+
+        System.out.println(totalBytes);
+
     }
 }

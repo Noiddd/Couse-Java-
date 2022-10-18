@@ -1,3 +1,5 @@
+package BankingApp_exceptions;
+
 import java.util.Scanner;
 
 class InvalidAccountException extends Exception {
@@ -60,9 +62,9 @@ class Bank {
             atm.acceptInput(accountNumber, password);
             atm.verify();
         } catch(InvalidAccountException iane) {
-            System.out.println(iane.getMessage() + " in initiate method in Bank class");
+            System.out.println(iane.getMessage() + " in initiate method in BankingApp.Bank class");
         } catch(InvalidPasswordException ipe) {
-            System.out.println(ipe.getMessage() + " in initiate method in Bank class");
+            System.out.println(ipe.getMessage() + " in initiate method in BankingApp.Bank class");
         }
     }
 }

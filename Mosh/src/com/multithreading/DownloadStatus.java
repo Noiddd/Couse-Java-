@@ -1,33 +1,16 @@
 package com.multithreading;
 
-import java.util.concurrent.atomic.LongAdder;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
 
 public class DownloadStatus {
-    private boolean isDone;
-    private LongAdder totalBytes = new LongAdder();
-    private int totalFiles;
+    private int totalBytes;
 
-    public int getTotalBytes() {
-        return totalBytes.intValue();
+    public int getTotalBytes(){
+        return totalBytes;
     }
 
-    public void incrementTotalBytes() {
-        totalBytes.increment();
-    }
-
-    public void incrementTotalFiles() {
-        totalFiles++;
-    }
-
-    public int getTotalFiles() {
-        return totalFiles;
-    }
-
-    public boolean isDone() {
-        return isDone;
-    }
-
-    public void done() {
-        isDone = true;
+    public void incrementTotalBytes(){
+            totalBytes++;
     }
 }

@@ -1,4 +1,5 @@
 import java.io.*;
+import java.util.ArrayList;
 
 public class LaunchReaderStream {
     public static void main(String[] args) {
@@ -15,8 +16,8 @@ public class LaunchReaderStream {
             String x;
 
             while((x = br.readLine()) != null){
-
                 bw.write(x);
+                System.out.println(x);
             }
             bw.flush();
 
